@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
+ 
+</head>
+<body>
+	<div class="panel panel-primary">
+		<div class="panel-heading"><h2>Inventory</h2></h2></div>
+		<div class="panel-body">
+		   <div><a href="/rental">home</a></div>
+		   <table class="table table-striped table-hover">
+				<tr>
+					<th>ID</th>
+					<th>Location</th>
+					<th>Category</th>
+					<th>Make</th>
+					<th>Model</th>
+					<th>Base DailyRate</th>
+	 			</tr>
+				<tr th:each=" x: ${cars}">
+					<td th:text="${x.id}"></td>
+					<td th:text="${x.location}"></td>
+					<td th:text="${x.category}"></td>
+					<td th:text="${x.make}"></td>
+					<td th:text="${x.model}"></td>
+					<td th:text="${#numbers.formatCurrency(x.dailyRate)}"></td>
+	 			</tr>
+			</table>
+		   
+		</div>
+	</div>
+</body>
+</html>
+
