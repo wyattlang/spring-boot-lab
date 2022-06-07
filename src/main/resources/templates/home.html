@@ -1,14 +1,26 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
- 
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/bootstrap.min.css}" />
+
 </head>
 <body>
 	<div class="panel panel-primary">
-		<div class="panel-heading">Home</div>
-		<div class="panel-body"></div>
 		<div class="panel-heading">
-			<h2><p th:text="${title}" /></h2>
+			<h2>
+				<p th:text="${title}" />
+			</h2>
+		</div>
+		<div class="panel-body">
+
+			<form action="#" th:action="@{/car}" method="get">
+				Airports: <select name="code">
+					<option th:each="airport : ${airports}"
+						th:value="${airport.iataCode}" th:text="${airport.desc}" />
+				</select> 
+				<input type="submit" value="Submit" />  
+				</p>
+			</form>
 		</div>
 	</div>
 </body>
