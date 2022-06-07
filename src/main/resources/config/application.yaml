@@ -4,6 +4,23 @@ server:
   servlet:
     context-path: /rental
 
+logging:
+  file: 
+    name: application.log
+  level:
+    root: INFO
+    org:
+      springframework: INFO
+
 cars:
   url: http://localhost:${server.port}${server.servlet.context-path}
   title: RentalCars R Us at ${cars.url}
+
+spring:
+  banner:
+    location: myBanner.txt
+    image:
+      location: static/images/aerospace.png
+      width: 150
+      height: 30
+      margin: 2

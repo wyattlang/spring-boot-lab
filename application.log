@@ -1,0 +1,9 @@
+2022-06-06 23:36:43.805  INFO 3140 --- [main] c.a.a.rental.RentalCarsApplication       : Starting RentalCarsApplication using Java 17.0.2 on DESKTOP-1V31RHG with PID 3140 (C:\Users\wyatt\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\Part02_RentalCars_Solution\target\classes started by wyatt in C:\Users\wyatt\Documents\workspace-spring-tool-suite-4-4.14.1.RELEASE\Part02_RentalCars_Solution)
+2022-06-06 23:36:43.809  INFO 3140 --- [main] c.a.a.rental.RentalCarsApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-06 23:36:44.202  INFO 3140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-06 23:36:44.208  INFO 3140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-06 23:36:44.208  INFO 3140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-06 23:36:44.257  INFO 3140 --- [main] o.a.c.c.C.[.[localhost].[/rental]        : Initializing Spring embedded WebApplicationContext
+2022-06-06 23:36:44.258  INFO 3140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 428 ms
+2022-06-06 23:36:44.428  INFO 3140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/rental'
+2022-06-06 23:36:44.434  INFO 3140 --- [main] c.a.a.rental.RentalCarsApplication       : Started RentalCarsApplication in 1.02 seconds (JVM running for 1.381)
