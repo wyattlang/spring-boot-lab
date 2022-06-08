@@ -18,7 +18,9 @@
 					<th>Base DailyRate</th>
 	 			</tr>
 				<tr th:each=" x: ${cars}">
-					<td th:text="${x.id}"></td>
+					<td>
+  						<a th:href="@{'car/' + ${x.id}}"><span th:text="${x.id}"/></a>
+					</td>
 					<td th:text="${x.location}"></td>
 					<td th:text="${x.category}"></td>
 					<td th:text="${x.make}"></td>
